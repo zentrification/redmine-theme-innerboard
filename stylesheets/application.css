@@ -339,3 +339,5 @@ div.attachments a { color:#118200; font-weight:bold;}
 
 /* darken green on 'done' section of progress bar */
 #roadmap table.progress td.done { background-color: #aacfaf; }
+
+#top-menu > ul li a { color: #CF68FF; font-size: 1.1em; letter-spacing: 0.5px; padding: 0 1em; }

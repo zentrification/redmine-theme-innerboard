@@ -132,7 +132,7 @@ body { text-align:center;
 	padding-top:25px;
 	font-size:12px;
 	line-height:160%;
-	width: 870px;
+	width: 930px;
 }
 #footer {  border: 0px; clear:both; color:#666666;
 	-moz-border-radius:  0 9px 9px 0;
@@ -141,7 +141,7 @@ body { text-align:center;
 	text-align:center;  border-top:1px solid #EEE;padding:13px; padding-top:30px;}
 
 
-#sidebar { width:260px; margin-right:10px; line-height:200%; padding:13px;}
+#sidebar { width:200px; margin-right:10px; line-height:200%; padding:13px;}
 #sidebar h3 { color: #333; font-size:12px; border-bottom:1px solid #CCC; padding:6px 0; }
 
 

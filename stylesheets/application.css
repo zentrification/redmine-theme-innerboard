@@ -325,6 +325,17 @@ div.attachments a { color:#118200; font-weight:bold;}
 
 .my-project { padding-left:0px; padding-right: 18px; background: url(/images/fav.png) no-repeat right 50%; }
 
+
+
+/*
+ * on issues page
+ * zebra stripe high/urgent/immediate issues as yellow/orange/red
+ */
+table.issues tr.priority-3 td { background-color: rgba(255, 255, 0, 0.15); }
+table.issues tr.priority-4 td { background-color: rgba(255, 129, 0, 0.25); }
+table.issues tr.priority-5 td { background-color: rgba(255,   0, 0, 0.15); }
+
+
 /*
  * Roadmap Customizations
  **************************************************/

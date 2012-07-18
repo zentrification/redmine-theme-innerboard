@@ -324,3 +324,14 @@ div.attachments p {
 div.attachments a { color:#118200; font-weight:bold;}
 
 .my-project { padding-left:0px; padding-right: 18px; background: url(/images/fav.png) no-repeat right 50%; }
+
+/*
+ * Roadmap Customizations
+ **************************************************/
+
+/* resolved = green, closed = black + strikethrough */
+#roadmap a.status-3 { color: green; }
+#roadmap a.status-5 { color: #555; }
+/* add check mark before ticket name/identifier */
+#roadmap a.status-5:before,
+#roadmap a.status-3:before { content: "\2713\0020"; }

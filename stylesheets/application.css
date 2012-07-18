@@ -332,6 +332,10 @@ div.attachments a { color:#118200; font-weight:bold;}
 /* resolved = green, closed = black + strikethrough */
 #roadmap a.status-3 { color: green; }
 #roadmap a.status-5 { color: #555; }
+
 /* add check mark before ticket name/identifier */
 #roadmap a.status-5:before,
 #roadmap a.status-3:before { content: "\2713\0020"; }
+
+/* darken green on 'done' section of progress bar */
+#roadmap table.progress td.done { background-color: #aacfaf; }

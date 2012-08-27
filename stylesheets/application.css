@@ -340,15 +340,16 @@ table.issues tr.priority-5 td { background-color: rgba(255,   0, 0, 0.15); }
  * Roadmap Customizations
  **************************************************/
 
-/* resolved = green, closed = black + strikethrough */
-#roadmap a.status-3 { color: green; }
-#roadmap a.status-5 { color: #555; }
+/* 1 = new, 2 = in progress, 3 = resolved, 5 = closed */
+#roadmap a.status-1 { opacity: 0.8; }
 
-/* add check mark before ticket name/identifier */
-#roadmap a.status-5:before,
+#roadmap a.status-3 { color: green; }
 #roadmap a.status-3:before { content: "\2713\0020"; }
+
+#roadmap a.status-5 { color: #555; }
+#roadmap a.status-5:before { content: "\2713\0020"; }
 
 /* darken green on 'done' section of progress bar */
 #roadmap table.progress td.done { background-color: #aacfaf; }
 
-#top-menu > ul li a { color: #CF68FF; font-size: 1.1em; letter-spacing: 0.5px; padding: 0 1em; }
+#top-menu > ul li a { color: #C82332; font-size: 1.1em; letter-spacing: 0.5px; padding: 0 1em; }

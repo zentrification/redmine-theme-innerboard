@@ -335,6 +335,12 @@ table.issues tr.priority-3 td { background-color: rgba(255, 255, 0, 0.15); }
 table.issues tr.priority-4 td { background-color: rgba(255, 129, 0, 0.25); }
 table.issues tr.priority-5 td { background-color: rgba(255,   0, 0, 0.15); }
 
+/*
+ * customize display of subprojects on projects page
+ */
+body.controller-projects ul.projects ul.projects { border: 0; padding-left: 0; }
+body.controller-projects ul.projects ul.projects a.project { font-size: 14px; font-weight: bold; }
+body.controller-projects ul.projects ul.projects li { background: url(/themes/redmine-theme-innerboard/images/arrow_right_green.png) no-repeat 2px 3px; padding-left: 20px; }
 
 /*
  * Roadmap Customizations

@@ -346,14 +346,23 @@ body.controller-projects ul.projects ul.projects li { background: url(/themes/re
  * Roadmap Customizations
  **************************************************/
 
-/* 1 = new, 2 = in progress, 3 = resolved, 5 = closed */
+/*
+ 1 = new
+ 2 = in progress
+ 3 = resolved
+ 4 = feedback
+ 5 = closed
+ */
 #roadmap a.status-1 { opacity: 0.8; }
 
 #roadmap a.status-3 { color: green; }
-#roadmap a.status-3:before { content: "\2713\0020"; }
-
+#roadmap a.status-4 { color: orange; }
 #roadmap a.status-5 { color: #555; }
+
+#roadmap a.status-3:before,
+#roadmap a.status-4:before,
 #roadmap a.status-5:before { content: "\2713\0020"; }
+
 
 /* darken green on 'done' section of progress bar */
 #roadmap table.progress td.done { background-color: #aacfaf; }

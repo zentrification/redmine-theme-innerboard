@@ -352,19 +352,43 @@ body.controller-projects ul.projects ul.projects li { background: url(/themes/re
  3 = resolved
  4 = feedback
  5 = closed
- */
-#roadmap a.status-1 { opacity: 0.8; }
+ 6 = rejected
+ http://www.tamasoft.co.jp/en/general-info/unicode.html
+*/
+body.controller-versions .status-1:before { content: "\25cc\0020"; }
+body.controller-versions .status-2:before { content: "\25cf\0020"; }
+body.controller-versions .status-3:before { content: "\2713\0020"; }
+body.controller-versions .status-4:before { content: "\270d\0020"; }
+body.controller-versions .status-5:before { content: "\2713\0020"; }
+body.controller-versions .status-6:before { content: "\2717\0020"; }
 
-#roadmap a.status-3 { color: green; }
-#roadmap a.status-4 { color: orange; }
-#roadmap a.status-5 { color: #555; }
+/* darken closed issues */
+body.controller-versions .issue.closed.status-5 { color: #555; }
 
-#roadmap a.status-3:before,
-#roadmap a.status-4:before,
-#roadmap a.status-5:before { content: "\2713\0020"; }
+/* orange/red for increased priority issues on roadmap */
+body.controller-versions .priority-5 { color: #ff9933; }
+body.controller-versions .priority-6 { color: #ff3300; }
+body.controller-versions .priority-7 { color: #ff3300; font-weight: bold; }
 
+#roadmap a.status-5.priority-3,
+#roadmap a.status-5.priority-4,
+#roadmap a.status-5.priority-5 { border: 0; }
+
+/* remove hover style because of bottom border to indicate priority */
+#roadmap td a:hover { text-decoration: none; }
 
 /* darken green on 'done' section of progress bar */
 #roadmap table.progress td.done { background-color: #aacfaf; }
 
 #top-menu > ul li a { color: #C82332; font-size: 1.1em; letter-spacing: 0.5px; padding: 0 1em; }
+
+/* put some space between the search and quick project switch */
+div#quick-search select { margin-left: 3em; }
+
+/* wiki formatting */
+body.controller-wiki.action-show h1 { border-bottom: 1px solid #999; font-size: 24px; padding-bottom: 7px; }
+body.controller-wiki.action-show #content .contextual { margin-top: 2px; }
+body.controller-wiki.action-show #content .breadcrumb { margin-bottom: 1em; }
+body.controller-wiki.action-show #content .toc.right { padding: 1em 1.5em; }
+body.controller-wiki.action-show #content .toc.right li a { font-size: 1em; line-height: 1.4em; }
+body.controller-wiki.action-show #content div.wiki div.contextual a img { border: 4px solid yellow; }
